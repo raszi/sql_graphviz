@@ -1,6 +1,6 @@
 FROM python:3-alpine
 
-RUN apk add --update graphviz
+RUN apk add --update --no-cache graphviz
 RUN pip install pyparsing
 
 RUN mkdir app
